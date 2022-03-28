@@ -1,0 +1,79 @@
+.tiendamain{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "verano primavera"
+      "otoño invierno"; 
+      justify-self: center;
+      align-self: center;
+  }
+  .tiendamain h3 {
+    text-align: center;
+  }
+  .ofverano {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: verano; 
+    padding: 50;
+  }
+  .ofprimavera {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: primavera; 
+    padding: 50;
+  }
+  .ofotoño {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: otoño; 
+    padding: 50;
+  }
+  .ofinvierno {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: invierno; 
+    
+  }
+  
+  @media only screen and (max-width: 768px){
+    .tiendamain{
+      display: grid; 
+      grid-template-columns: 0.5fr 0.5fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+         "logo"
+        "verano"
+         "primavera"
+        "otoño" 
+        "invierno"; 
+        justify-self: center;
+        align-self: center;
+    }
+    .header {
+      display: grid; 
+       grid-template-columns: 0.5fr; 
+       grid-template-rows: 0.5fr 0.5fr 0fr 0.6fr; 
+       gap: 0px 0px; 
+       grid-template-areas: 
+         "redes"
+         "logo"
+         "eslogan"
+         "nav"; 
+       justify-content: space-around; 
+       align-content: stretch; 
+       justify-items: center; 
+       align-items: center;
+       background-color: black;
+       padding-left: 7%;
+       padding-right: 7%;
+       }
+
+       .logo {
+         grid-area: auto;
+        }
+
+  }
+  

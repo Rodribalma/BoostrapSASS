@@ -1,0 +1,75 @@
+footer {
+    display: grid; 
+    grid-template-columns:1fr 1fr; 
+    grid-template-rows: auto; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "maps horarios"; 
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  .maps {
+    justify-self: start; 
+    align-self: end; 
+    grid-area: maps;
+    width: auto;
+    padding: 20;
+    margin: auto;
+
+  }
+  .horarios {
+    justify-self: end; 
+    align-self: end; 
+    grid-area: horarios; 
+    width: auto;
+    padding: 20;
+    margin: auto;
+  }
+  
+  @media only screen and (max-width: 768px){
+    .tiendamain{
+      display: grid; 
+      grid-template-columns: 0.5fr 0.5fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+         "logo"
+        "verano"
+         "primavera"
+        "otoño" 
+        "invierno"; 
+        justify-self: center;
+        align-self: center;
+    }
+    .header {
+      display: grid; 
+       grid-template-columns: 0.5fr; 
+       grid-template-rows: 0.5fr 0.5fr 0fr 0.6fr; 
+       gap: 0px 0px; 
+       grid-template-areas: 
+         "redes"
+         "logo"
+         "eslogan"
+         "nav"; 
+       justify-content: space-around; 
+       align-content: stretch; 
+       justify-items: center; 
+       align-items: center;
+       background-color: black;
+       padding-left: 7%;
+       padding-right: 7%;
+       }
+
+       footer {
+        display: grid; 
+        grid-template-columns:1fr 1fr; 
+        grid-template-rows: auto; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "maps" 
+          "horarios"; 
+          padding-top: 30px;
+          padding-bottom: 30px;
+      }
+
+  }
