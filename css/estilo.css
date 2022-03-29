@@ -7264,7 +7264,7 @@ body {
   .tiendamain {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
     gap: 0px 0px;
     grid-template-areas: "logo" "verano" "primavera" "otoño"  "invierno";
     justify-self: center;
@@ -7287,10 +7287,19 @@ body {
     padding: 50px;
     margin: 20px;
     grid-area: auto; }
-  .logo img {
-    width: 378px;
-    padding: 74px;
-    margin: -8px; } }
+  .eslogan {
+    text-align: center;
+    grid-area: eslogan;
+    color: white;
+    background-color: black;
+    -webkit-animation: cssAnimation 5s 20 ease-in;
+    -moz-animation: cssAnimation 5s 20 ease-in;
+    -o-animation: cssAnimation 5s 20 ease-in; }
+  @-webkit-keyframes cssAnimation {
+    from {
+      -webkit-transform: rotate(0deg) scale(0.354) skew(0deg) translate(0px); }
+    to {
+      -webkit-transform: rotate(0deg) scale(1.12) skew(0deg) translate(0px); } } }
 
 .tiendamain {
   display: grid;
@@ -7331,7 +7340,7 @@ body {
   .tiendamain {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
     gap: 0px 0px;
     grid-template-areas: "logo" "verano" "primavera" "otoño"  "invierno";
     justify-self: center;
